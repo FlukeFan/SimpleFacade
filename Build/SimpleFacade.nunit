@@ -1,0 +1,6 @@
+﻿<NUnitProject>
+  <Settings activeconfig="Debug" />
+  <Config name="Debug" binpathtype="Auto">
+    <assembly path="..\SimpleFacade.Tests\bin\Debug\SimpleFacade.Tests.dll" />
+  </Config>
+</NUnitProject>

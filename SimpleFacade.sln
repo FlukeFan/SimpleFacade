@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Items", "Items", "{5FE3875B-BC5C-48E0-ABE0-91A639F2F419}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		CommandPrompt.bat = CommandPrompt.bat
+		LICENSE.txt = LICENSE.txt
+		readme.txt = readme.txt
+		RunNUnit.bat = RunNUnit.bat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{6FC380D2-3FC4-423D-B933-166545CC7F3C}"
+	ProjectSection(SolutionItems) = preProject
+		Build\Common.targets = Build\Common.targets
+		Build\SimpleFacade.nunit = Build\SimpleFacade.nunit
+		SimpleFacade.proj = SimpleFacade.proj
+		Build\VerifyCoverage.js = Build\VerifyCoverage.js
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFacade", "SimpleFacade\SimpleFacade.csproj", "{FF53B42B-14E3-4065-AC94-2BBB98CAF0CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFacade.Testing", "SimpleFacade.Testing\SimpleFacade.Testing.csproj", "{2AE49077-2757-4565-96B8-65A72F2A956C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFacade.Tests", "SimpleFacade.Tests\SimpleFacade.Tests.csproj", "{5DDA6565-87F1-4E76-80DC-54A5A251D3F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF53B42B-14E3-4065-AC94-2BBB98CAF0CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF53B42B-14E3-4065-AC94-2BBB98CAF0CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF53B42B-14E3-4065-AC94-2BBB98CAF0CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF53B42B-14E3-4065-AC94-2BBB98CAF0CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AE49077-2757-4565-96B8-65A72F2A956C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AE49077-2757-4565-96B8-65A72F2A956C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AE49077-2757-4565-96B8-65A72F2A956C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AE49077-2757-4565-96B8-65A72F2A956C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DDA6565-87F1-4E76-80DC-54A5A251D3F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DDA6565-87F1-4E76-80DC-54A5A251D3F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DDA6565-87F1-4E76-80DC-54A5A251D3F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DDA6565-87F1-4E76-80DC-54A5A251D3F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
