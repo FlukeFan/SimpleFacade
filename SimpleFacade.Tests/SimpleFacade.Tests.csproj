@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="..\_output\AssemblyInfo.cs" />
     <Compile Include="Exceptions\FacadeExceptionTests.cs" />
+    <Compile Include="Execution\CqExecutorTests.cs" />
     <Compile Include="Execution\ExecutorTests.cs" />
     <Compile Include="Testing\ExecutorStubTests.cs" />
     <Compile Include="Validation\ExecutableValidatorTests.cs" />
