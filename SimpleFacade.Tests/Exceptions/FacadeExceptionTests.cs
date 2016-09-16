@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using FluentAssertions;
-using Lucid.Facade.Exceptions;
 using NUnit.Framework;
+using SimpleFacade.Exceptions;
 
-namespace Lucid.Facade.Tests.Exceptions
+namespace SimpleFacade.Tests.Exceptions
 {
     [TestFixture]
     public class FacadeExceptionTests

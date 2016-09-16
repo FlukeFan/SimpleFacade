@@ -1,5 +1,5 @@
 ﻿
-namespace Lucid.Facade.Testing
+namespace SimpleFacade.Testing
 {
     public static class It
     {

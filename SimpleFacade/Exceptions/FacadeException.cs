@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
-namespace Lucid.Facade.Exceptions
+namespace SimpleFacade.Exceptions
 {
     public class FacadeException : ApplicationException
     {

@@ -2,11 +2,11 @@
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using FluentAssertions;
-using Lucid.Facade.Exceptions;
-using Lucid.Facade.Validation;
 using NUnit.Framework;
+using SimpleFacade.Exceptions;
+using SimpleFacade.Validation;
 
-namespace Lucid.Facade.Tests.Validation
+namespace SimpleFacade.Tests.Validation
 {
     [TestFixture]
     public class ExecutableValidatorTests

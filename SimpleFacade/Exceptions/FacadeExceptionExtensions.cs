@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Linq.Expressions;
 
-namespace Lucid.Facade.Exceptions
+namespace SimpleFacade.Exceptions
 {
     public static class FacadeExceptionExtensions
     {

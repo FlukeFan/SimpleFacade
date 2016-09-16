@@ -1,4 +1,4 @@
-﻿namespace Lucid.Facade.Execution
+﻿namespace SimpleFacade.Execution
 {
     public class CqExecutor : ICqExecutor
     {

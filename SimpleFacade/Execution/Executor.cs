@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.ExceptionServices;
 
-namespace Lucid.Facade.Execution
+namespace SimpleFacade.Execution
 {
     public class Executor : IExecutor
     {

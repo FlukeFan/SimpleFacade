@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using FluentAssertions;
-using Lucid.Facade.Exceptions;
-using Lucid.Facade.Execution;
 using NUnit.Framework;
+using SimpleFacade.Exceptions;
+using SimpleFacade.Execution;
 
-namespace Lucid.Facade.Tests.Execution
+namespace SimpleFacade.Tests.Execution
 {
     [TestFixture]
     public class ExecutorTests

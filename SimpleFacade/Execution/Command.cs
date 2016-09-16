@@ -1,5 +1,5 @@
 ﻿
-namespace Lucid.Facade.Execution
+namespace SimpleFacade.Execution
 {
     public abstract class Command : ICommand, IExecutable
     {

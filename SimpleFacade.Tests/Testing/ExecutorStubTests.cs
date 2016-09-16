@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using FluentAssertions;
-using Lucid.Facade.Execution;
-using Lucid.Facade.Testing;
 using NUnit.Framework;
+using SimpleFacade.Execution;
+using SimpleFacade.Testing;
 
-namespace Lucid.Facade.Tests.Testing
+namespace SimpleFacade.Tests.Testing
 {
     [TestFixture]
     public class ExecutorStubTests

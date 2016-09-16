@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Lucid.Facade.Execution;
+using SimpleFacade.Execution;
 
-namespace Lucid.Facade.Testing
+namespace SimpleFacade.Testing
 {
     public class ExecutorStub : IExecutor
     {

@@ -1,6 +1,6 @@
-﻿using Lucid.Facade.Execution;
+﻿using SimpleFacade.Execution;
 
-namespace Lucid.Facade.Validation
+namespace SimpleFacade.Validation
 {
     public class ValidatingExecutor : IExecutor
     {

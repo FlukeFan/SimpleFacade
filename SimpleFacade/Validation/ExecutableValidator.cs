@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Lucid.Facade.Exceptions;
+using SimpleFacade.Exceptions;
 
-namespace Lucid.Facade.Validation
+namespace SimpleFacade.Validation
 {
     public static class ExecutableValidator
     {

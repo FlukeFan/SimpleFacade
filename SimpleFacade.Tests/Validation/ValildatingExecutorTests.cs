@@ -1,12 +1,12 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using FluentAssertions;
-using Lucid.Facade.Exceptions;
-using Lucid.Facade.Execution;
-using Lucid.Facade.Validation;
 using NUnit.Framework;
+using SimpleFacade.Exceptions;
+using SimpleFacade.Execution;
+using SimpleFacade.Validation;
 
-namespace Lucid.Facade.Tests.Validation
+namespace SimpleFacade.Tests.Validation
 {
     [TestFixture]
     public class ValildatingExecutorTests
