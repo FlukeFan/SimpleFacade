@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using SimpleFacade.Execution;
 
 namespace SimpleFacade.Testing
 {

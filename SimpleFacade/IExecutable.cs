@@ -1,5 +1,4 @@
-﻿
-namespace SimpleFacade.Execution
+﻿namespace SimpleFacade
 {
     public interface IExecutable
     {

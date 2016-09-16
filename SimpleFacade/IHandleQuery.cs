@@ -1,8 +1,5 @@
-﻿
-namespace SimpleFacade.Execution
+﻿namespace SimpleFacade
 {
-    public interface IQuery<in TReturn> { }
-
     public interface IHandleQuery<TQuery, TReturn>
         where TQuery : IQuery<TReturn>
     {

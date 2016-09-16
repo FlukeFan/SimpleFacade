@@ -1,5 +1,4 @@
-﻿
-namespace SimpleFacade.Testing
+﻿namespace SimpleFacade.Testing
 {
     public static class It
     {

@@ -1,10 +1,5 @@
-﻿
-namespace SimpleFacade.Execution
+﻿namespace SimpleFacade
 {
-    public interface ICommand {}
-
-    public interface ICommand<in TReturn> { }
-
     public interface IHandleVoidCommand<TCmd>
         where TCmd : ICommand
     {

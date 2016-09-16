@@ -2,7 +2,6 @@
 using System.Linq;
 using FluentAssertions;
 using NUnit.Framework;
-using SimpleFacade.Execution;
 using SimpleFacade.Testing;
 
 namespace SimpleFacade.Tests.Testing

@@ -49,13 +49,15 @@
     <Compile Include="Exceptions\FacadeExceptionExtensions.cs" />
     <Compile Include="Execution\CqExecutor.cs" />
     <Compile Include="Execution\Executor.cs" />
-    <Compile Include="Execution\ICommand.cs" />
+    <Compile Include="ICommand.cs" />
     <Compile Include="Execution\ICqExecutor.cs" />
-    <Compile Include="Execution\IExecutor.cs" />
-    <Compile Include="Execution\IQuery.cs" />
+    <Compile Include="IExecutor.cs" />
+    <Compile Include="IHandleCommand.cs" />
+    <Compile Include="IHandleQuery.cs" />
+    <Compile Include="IQuery.cs" />
     <Compile Include="Validation\ValidatingExecutor.cs" />
     <Compile Include="Execution\Command.cs" />
-    <Compile Include="Execution\IExecutable.cs" />
+    <Compile Include="IExecutable.cs" />
     <Compile Include="Execution\Query.cs" />
     <Compile Include="Validation\ExecutableValidator.cs" />
   </ItemGroup>

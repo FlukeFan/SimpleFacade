@@ -1,5 +1,4 @@
-﻿
-namespace SimpleFacade.Execution
+﻿namespace SimpleFacade.Execution
 {
     public abstract class Query<TReturn> : IQuery<TReturn>, IExecutable
     {

@@ -1,6 +1,4 @@
-﻿using SimpleFacade.Execution;
-
-namespace SimpleFacade.Validation
+﻿namespace SimpleFacade.Validation
 {
     public class ValidatingExecutor : IExecutor
     {
