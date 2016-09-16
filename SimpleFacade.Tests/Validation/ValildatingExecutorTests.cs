@@ -28,5 +28,32 @@ namespace SimpleFacade.Tests.Validation
             [Required]
             public string Name { get; set; }
         }
+
+        [Test]
+        public void ExecutesUnderlyingExecutor()
+        {
+            var executor = new CqExecutor(
+                new ValidatingExecutor(
+                    new Executor()
+                )
+            );
+
+            Assert.Throws<FacadeException>(() => executor.Execute(new ValidQuery()));
+
+            var result = executor.Execute(new ValidQuery { Value = 7 });
+
+            result.Should().Be(7);
+        }
+
+        public class ValidQuery : Query<int>
+        {
+            [Required]
+            public int? Value { get; set; }
+
+            public override int Find()
+            {
+                return Value.Value;
+            }
+        }
     }
 }
