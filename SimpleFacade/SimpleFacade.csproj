@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\_items\AssemblyInfo.cs" />
+    <Compile Include="..\_output\AssemblyInfo.cs" />
     <Compile Include="Exceptions\FacadeException.cs" />
     <Compile Include="Exceptions\FacadeExceptionExtensions.cs" />
     <Compile Include="Execution\CqExecutor.cs" />

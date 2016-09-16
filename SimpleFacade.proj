@@ -69,6 +69,7 @@
   </ItemGroup>
 
   <Target Name="GenerateAssemblyInfo" Inputs="Build\Common.targets" Outputs="_output\AssemblyInfo.cs">
+    <MakeDir Directories="_output" />
     <AssemblyInfo
       CodeLanguage="CS"
       AssemblyDescription="Simple Facade"
@@ -88,9 +89,8 @@
     <CallTarget Targets="SetReleaseConfiguration" />
     <CallTarget Targets="Init" />
     <CallTarget Targets="Build" />
-    <Exec Command="$(NuGetExe) push _output\Reposify.$(Version).nupkg -Source nuget.org -NonInteractive" />
-    <Exec Command="$(NuGetExe) push _output\Reposify.Testing.$(Version).nupkg -Source nuget.org -NonInteractive" />
-    <Exec Command="$(NuGetExe) push _output\Reposify.NHibernate.$(Version).nupkg -Source nuget.org -NonInteractive" />
+    <Exec Command="$(NuGetExe) push _output\SimpleFacade.$(Version).nupkg -Source nuget.org -NonInteractive" />
+    <Exec Command="$(NuGetExe) push _output\SimpleFacade.Testing.$(Version).nupkg -Source nuget.org -NonInteractive" />
     <CallTarget Targets="Clean" />
   </Target>
 
