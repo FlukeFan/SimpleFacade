@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using FluentAssertions;
 using NUnit.Framework;
 using SimpleFacade.Exceptions;
@@ -10,11 +11,31 @@ namespace SimpleFacade.Tests.Execution
     public class ExecutorTests
     {
         [Test]
-        public void Executes()
+        public void ExecutesCommand()
         {
             var executor = new Executor() as IExecutor;
 
-            var result = (int)executor.Execute(new SimpleExecutable());
+            var result = (string)executor.Execute(new SimpleCommand());
+
+            result.Should().Be("SimpleCommand");
+        }
+
+        [Test]
+        public void ExecutesVoidCommand()
+        {
+            var executor = new Executor() as IExecutor;
+
+            var e = Assert.Throws<Exception>(() => executor.Execute(new SimpleVoidCommand()));
+
+            e.Message.Should().Be("SimpleVoidCommand.Execute()");
+        }
+
+        [Test]
+        public void ExecutesQuery()
+        {
+            var executor = new Executor() as IExecutor;
+
+            var result = (int)executor.Execute(new SimpleQuery());
 
             result.Should().Be(3);
         }
@@ -70,7 +91,23 @@ namespace SimpleFacade.Tests.Execution
             result.Should().ContainInOrder(4, 5, 6);
         }
 
-        public class SimpleExecutable : Query<int>
+        public class SimpleVoidCommand : Command
+        {
+            public override void Execute()
+            {
+                throw new Exception("SimpleVoidCommand.Execute()");
+            }
+        }
+
+        public class SimpleCommand : Command<string>
+        {
+            public override string Execute()
+            {
+                return "SimpleCommand";
+            }
+        }
+
+        public class SimpleQuery : Query<int>
         {
             public override int Find()
             {
