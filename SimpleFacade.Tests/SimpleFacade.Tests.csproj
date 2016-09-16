@@ -68,7 +68,18 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleFacade.Testing\SimpleFacade.Testing.csproj">
+      <Project>{2ae49077-2757-4565-96b8-65a72f2a956c}</Project>
+      <Name>SimpleFacade.Testing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleFacade\SimpleFacade.csproj">
+      <Project>{ff53b42b-14e3-4065-ac94-2bbb98caf0ca}</Project>
+      <Name>SimpleFacade</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\Build\Common.targets" />
   <Target Name="AfterBuild">
     <CallTarget Targets="RunTestsWithCoverage" />
   </Target>
