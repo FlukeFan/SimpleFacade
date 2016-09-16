@@ -13,5 +13,8 @@
     <licenseUrl>https://raw.githubusercontent.com/FlukeFan/SimpleFacade/master/LICENSE.txt</licenseUrl>
     <projectUrl>https://github.com/FlukeFan/SimpleFacade</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/FlukeFan/SimpleFacade/master/icon.png</iconUrl>
+    <dependencies>
+      <dependency id="SimpleFacade" version="$version$" />
+    </dependencies>
   </metadata>
 </package>
