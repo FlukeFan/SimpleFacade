@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://MSBuild/Community/Tasks ..\packages\MSBuildTasks.1.5.0.214\tools\MSBuild.Community.Tasks.xsd">
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
   <PropertyGroup>
 
     <Version>0.0.0.3</Version>
     <CoverageTarget Condition="'$(CoverageTarget)'==''">90</CoverageTarget>
 
-    <NuGetExe>$(MSBuildThisFileDirectory)\..\packages\NuGet.CommandLine.3.4.3\tools\NuGet.exe</NuGetExe>
+    <NuGetExe>$(MSBuildThisFileDirectory)\..\packages\NuGet.CommandLine.4.3.0\tools\NuGet.exe</NuGetExe>
     <OpenCoverExe>$(MSBuildThisFileDirectory)\..\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe</OpenCoverExe>
     <NUnitExe>$(MSBuildThisFileDirectory)\..\packages\NUnit.Runners.2.6.4\tools\nunit-console.exe</NUnitExe>
-    <ReportGeneratorExe>$(MSBuildThisFileDirectory)\..\packages\ReportGenerator.2.5.1\tools\ReportGenerator.exe</ReportGeneratorExe>
+    <ReportGeneratorExe>$(MSBuildThisFileDirectory)\..\packages\ReportGenerator.3.0.0\tools\ReportGenerator.exe</ReportGeneratorExe>
     <VerifyCoverageJs>$(MSBuildThisFileDirectory)\VerifyCoverage.js</VerifyCoverageJs>
 
     <Asterisk>%2A</Asterisk>
