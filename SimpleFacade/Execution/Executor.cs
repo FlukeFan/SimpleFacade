@@ -73,7 +73,7 @@ namespace SimpleFacade.Execution
 
         protected virtual object UnhandledExecute(object executable)
         {
-            throw new Exception(string.Format("Could not execute:{0}\nEither it dit not implement IExecutable, or no handler was registered (using UsingHandlerFrommAssemblyWithType())", executable));
+            throw new Exception(string.Format("Could not execute:{0}\nEither it dit not implement IExecutable, or no handler implementing IHandle_xxx was registered (using UsingHandlersFromAssemblyWithType())", executable));
         }
 
     }
