@@ -5,8 +5,3 @@
 *.suo
 *.sln.cache
 /.vs
-
-/_output
-/Build/SimpleFacade.VisualState.xml
-/Build/TestResult.xml
-/packages

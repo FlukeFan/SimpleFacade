@@ -12,8 +12,11 @@ To build, open CommandPrompt.bat, and type 'b'.
 
 Build commands:
 
-b                               : build
-bt <part-test-name>             : run test where "test =~ <part-test-name>"
-b /t:clean                      : clean
-b /t:setApiKey /p:apiKey=[key]  : set the api key
-b /t:push                       : Push packages to NuGet and publish them (setApiKey before running this)
+br                                      Restore dependencies (execute this first)
+b                                       Dev-build
+bw                                      Watch dev-build
+bt <test>                               Run tests with filter Name~<test>
+btw <test>                              Watch run tests with filter Name~<test>
+bc                                      Clean the build outputs
+b /t:setApiKey /p:apiKey=[key]          Set the NuGet API key
+b /t:push                               Push packages to NuGet and publish them (setApiKey before running this)
