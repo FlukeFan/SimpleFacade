@@ -21,6 +21,7 @@ namespace Build
                 process.StartInfo.FileName = FileName;
                 process.StartInfo.Arguments = Arguments;
                 process.StartInfo.WorkingDirectory = WorkingDirectory;
+                process.StartInfo.UseShellExecute = false;
                 process.Start();
                 process.WaitForExit();
 
